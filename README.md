@@ -26,7 +26,17 @@
 
 PS：所有http协议地址均可使用https，文档中为了统一写作`http`，为了数据安全建议所有接口使用https
 
-小小的Demo：[av583785685](https://www.bilibili.com/video/av583785685)
+小小的Demo：~~av583785685~~[视频失效原因](https://shakaianee.top/archives/56/)
+
+---
+
+**声明**：
+
+1. 本项目遵守CC-BY-4.0协议，如需转载请标明作者ID
+2. **请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！请勿滥用，本项目仅用于学习和测试！**
+3. 由于使用本项目提供的接口、文档等造成的不良影响和后果与本人无关
+4. 由于本项目的特殊性，可能随时停止开发或删档
+5. 本项目为开源项目，不接受任何的催单和索取行为
 
 ---
 
@@ -36,6 +46,7 @@ PS：所有http协议地址均可使用https，文档中为了统一写作`http`
 - [公共错误码](other/errcode.md)√
 - [图片格式化](other/picture.md)√
 - [bvID说明](other/bvID.md)√
+- [grpc接口](grpc_api)×
 - [登录](login)
   - [登录操作（人机认证）](login/login_action)√
     + [短信登录](login/login_action/SMS.md)√
@@ -76,16 +87,16 @@ PS：所有http协议地址均可使用https，文档中为了统一写作`http`
   - [protobuf实时弹幕](danmaku/danmaku_proto.md)√
   - [protobuf弹幕元数据（BAS弹幕/互动弹幕）](danmaku/danmaku_view_proto.md)√
   - [xml实时弹幕](danmaku/danmaku_xml.md)√
-  - [xml历史弹幕](danmaku/history.md)√
+  - [历史弹幕](danmaku/history.md)√
   - [快照](danmaku/snapshot.md)√
   - [弹幕操作](danmaku/action.md)×
   - 高级弹幕
   - 屏蔽管理
   - 智能防挡弹幕
   - [弹幕个人配置修改](danmaku/config.md)√
-- [视频笔记](note)×
-  - 笔记列表
-  - 笔记详细信息
+- [视频笔记](note)√
+  - [笔记列表](note/list.md)√
+  - [笔记详细信息](note/info.md)√
   - [笔记操作](note/action.md)√
 - [专栏](article)
   - 分区
@@ -135,12 +146,21 @@ PS：所有http协议地址均可使用https，文档中为了统一写作`http`
   - [发送&转载动态](dynamic/publish.md)×
   - 动态列表
   - 动态内容
-  - 小视频
   - 操作
+- [相簿](album)
+  - [基本信息](album/info.md)√
+  - [相簿列表](album/list.md)√
+  - [推荐作者](album/recommend_author.md)√
+  - [活动列表](album/activity_list.md)√
+  - [操作](album/action.md)√
+  - 投稿
 - [历史记录&稍后再看](history&toview)
   - [历史记录](history&toview/history.md)√
   - [稍后再看](history&toview/toview.md)√
-- 收藏夹
+- [收藏夹](favlist)
+  - [基本信息](fav/info.md)√
+  - [收藏夹内容](fav/list.md)√
+  - [收藏夹操作](fav/action.md)×
 - [课程](cheese)
   - [课程基本信息](cheese/info.md)√
   - 已购课程
@@ -162,8 +182,10 @@ PS：所有http协议地址均可使用https，文档中为了统一写作`http`
 - 哔哩哔哩漫画
 - 哔哩哔哩游戏
 - 轻视频
+- [终端网络查询](clientinfo)
+  	- [基于ip的地理位置查询](clientinfo/ip.md)√
+  	- [终端信息查询](clientinfo/client_info.md)√
 - [其他](other)
-  - [基于ip的地理位置查询](other/ip.md)√
   - [获取当前时间戳](other/time_stamp.md)√
 - [web端组件](web_widget)
   - [分区当日投稿数](web_widget/zone_upload.md)√
@@ -175,25 +197,35 @@ PS：所有http协议地址均可使用https，文档中为了统一写作`http`
 
 B站专栏同步推出[《B站api研究记》](https://www.bilibili.com/read/readlist/rl207146)系列（更新状态：咕咕......），~~欢迎关注~~
 
-**注意：请勿滥用，仅用于学习和测试！**
+**--Project_by [社会易姐QwQ](https://space.bilibili.com/293793435)**
 
-**注意：请勿滥用，仅用于学习和测试！**
+# 相关协议基础
 
-**注意：请勿滥用，仅用于学习和测试！**
+http协议：[传送门](https://www.cnblogs.com/an-wen/p/11180076.html)
 
-（重要的话说三遍，本人不承担任何责任）
+json序列格式：[传送门](https://www.sojson.com/json/json_index.html)
+
+xml序列格式：[传送门](https://www.w3school.com.cn/xml/xml_intro.asp)
+
+protobuf序列格式：[传送门](https://www.jianshu.com/p/a24c88c0526a )
+
+# 交流
 
 <img src="imgs/up_face.jpg" width="100" height="100">
 
-**--by [社会易姐QwQ](https://space.bilibili.com/293793435)**
+QQ粉丝交流群：[1136462265](https://jq.qq.com/?_wv=1027&k=s1M0LCcu)
 
-备注：
+B站空间：https://space.bilibili.com/293793435
 
-不了解http的请移步，[传送门](https://www.cnblogs.com/an-wen/p/11180076.html)
+个人博客：https://shakaianee.top
 
-不了解json的请移步，[传送门](https://www.sojson.com/json/json_index.html)
+# 发电
 
-不了解protobuf的请移步，[传送门](https://www.jianshu.com/p/a24c88c0526a )
+欢迎来py，大家的支持就是我继续开发的动力！
+
+~~请可爱的易姐喝杯奶茶~~
+
+<img src="imgs/sponsorQR.jpg" width="300" height="300">
 
 # 相关项目：
 
@@ -230,11 +262,3 @@ B站专栏同步推出[《B站api研究记》](https://www.bilibili.com/read/rea
 ## 其他：
 
 - [kuresaru/geetest-validator](https://github.com/kuresaru/geetest-validator):geetest调试器
-- [SocialSisterYi/bv2av_convert](https://github.com/SocialSisterYi/bv2av_convert):C语言算法av号与bv号互转器
-
-
-
-
-
-
-
